@@ -3,6 +3,9 @@
   "exclude": ["node_modules", "build", "dist", "**/*.test.ts"],
   {
   "compilerOptions": {
+     "baseUrl": ".",
+    "paths": {
+      "@/*": ["client/src/*"]
     "outDir": "dist",
     "rootDir": "./",
     "module": "ESNext",
