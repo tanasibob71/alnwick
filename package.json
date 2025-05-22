@@ -6,8 +6,14 @@
   "scripts": {
     "dev": "NODE_ENV=development tsx server/index.ts",
     "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
-    "start": "scripts": {
-  "start": "node index.js"
+    {
+  "name": "alnwickcommunity.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {}
 }
 
     "check": "tsc",
