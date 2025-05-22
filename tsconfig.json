@@ -1,11 +1,11 @@
 {
   "include": ["client/src/**/*", "shared/**/*", "server/**/*"],
   "exclude": ["node_modules", "build", "dist", "**/*.test.ts"],
-  {
   "compilerOptions": {
-     "baseUrl": ".",
+    "baseUrl": ".",
     "paths": {
       "@/*": ["client/src/*"]
+    },
     "outDir": "dist",
     "rootDir": "./",
     "module": "ESNext",
