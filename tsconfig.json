@@ -1,18 +1,21 @@
 {
-  "include": ["client/src/**/*", "shared/**/*", "server/**/*"],
-  "exclude": ["node_modules", "build", "dist", "**/*.test.ts"],
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["client/src/*"]
-    },
-    "outDir": "dist",
-    "rootDir": "./",
+    "target": "ESNext",
     "module": "ESNext",
-    "target": "ES2019",
-    "moduleResolution": "Node",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
     "resolveJsonModule": true,
-    "strict": true
-  }
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx", // 👈 THIS is critical!
+    "types": ["vite/client"]
+  },
+  "include": ["client", "server"],
+  "exclude": ["node_modules"]
 }
