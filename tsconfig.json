@@ -13,7 +13,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx", // 👈 THIS is critical!
+    "jsx": "react-jsx",
     "types": ["vite/client"]
   },
   "include": ["client", "server"],
