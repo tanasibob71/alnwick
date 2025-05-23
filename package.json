@@ -4,24 +4,11 @@
   "type": "module",
   "main": "dist/server/index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development tsx server/index.ts", npm install --save-dev cross-env
-npm error code EJSONPARSE
-npm error path C:\Users\bob\Documents\GitHub\alnwick/package.json
-npm error JSON.parse Expected ',' or '}' after property value in JSON at positio
-n 199 (line 8 column 5) while parsing near "...rver/index.ts\"\r\n    \"build\":
- \"NODE_OPTIO..."
-npm error JSON.parse Failed to parse JSON data.
-npm error JSON.parse Note: package.json must be actual JSON, not just JavaScript
-.
-npm error A complete log of this run can be found in: C:\Users\bob\AppData\Local
-\npm-cache\_logs\2025-05-23T12_04_39_006Z-debug-0.log
-
-    "build": "NODE_OPTIONS='--max-old-space-size=2048' tsc",
+    "dev": "cross-env NODE_ENV=development tsx server/index.ts",
+    "build": "cross-env NODE_OPTIONS='--max-old-space-size=2048' tsc",
     "start": "node dist/server/index.js",
     "check": "tsc",
-    "db:push": "drizzle-kit push",
-    "security:audit": "npm audit --audit-level=moderate",
-    "upgrade:deps": "ncu -u && npm install"
+    "db:push": "drizzle-kit push"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
@@ -32,17 +19,17 @@ npm error A complete log of this run can be found in: C:\Users\bob\AppData\Local
     "@tanstack/react-query": "^5.76.2",
     "drizzle-orm": "^0.43.1",
     "drizzle-zod": "^0.8.1",
-    "express": "^5.1.0",
+    "express": "^4.21.2",
     "express-session": "^1.18.1",
     "lucide-react": "^0.511.0",
     "memorystore": "^1.6.7",
-    "multer": "^2.0.0",
+    "multer": "^1.4.5-lts.2",
     "nodemailer": "^7.0.3",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
     "react-hook-form": "^7.56.4",
-    "stripe": "^18.1.1",
+    "stripe": "^18.1.0",
     "wouter": "^3.7.0",
     "ws": "^8.18.2",
     "zod": "^3.25.23",
@@ -56,14 +43,14 @@ npm error A complete log of this run can be found in: C:\Users\bob\AppData\Local
     "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",
     "@types/react-helmet": "^6.1.11",
-    "@types/wouter": "^2.2.0",
+    "@types/wouter": "^2.0.1",
     "@types/ws": "^8.18.1",
-    "@vitejs/plugin-react": "^4.2.0",
-    "cross-env": "^7.0.3",
-    "tailwindcss": "^4.1.7",
-    "ts-node": "^10.9.2",
-    "tsx": "^4.19.4",
-    "typescript": "5.8.3",
-    "vite": "^5.4.19"
+    "@vitejs/plugin-react": "^4.3.2",
+    "tailwindcss": "^3.4.17",
+    "ts-node": "^10.9.1",
+    "tsx": "^4.7.0",
+    "typescript": "5.6.3",
+    "vite": "^6.3.5",
+    "cross-env": "^7.0.3"
   }
 }
