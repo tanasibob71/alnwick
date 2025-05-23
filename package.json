@@ -4,7 +4,18 @@
   "type": "module",
   "main": "dist/server/index.js",
   "scripts": {
-    "dev": "NODE_ENV=development tsx server/index.ts",
+    "dev": "cross-env NODE_ENV=development tsx server/index.ts", npm install --save-dev cross-env
+npm error code EJSONPARSE
+npm error path C:\Users\bob\Documents\GitHub\alnwick/package.json
+npm error JSON.parse Expected ',' or '}' after property value in JSON at positio
+n 199 (line 8 column 5) while parsing near "...rver/index.ts\"\r\n    \"build\":
+ \"NODE_OPTIO..."
+npm error JSON.parse Failed to parse JSON data.
+npm error JSON.parse Note: package.json must be actual JSON, not just JavaScript
+.
+npm error A complete log of this run can be found in: C:\Users\bob\AppData\Local
+\npm-cache\_logs\2025-05-23T12_04_39_006Z-debug-0.log
+
     "build": "NODE_OPTIONS='--max-old-space-size=2048' tsc",
     "start": "node dist/server/index.js",
     "check": "tsc",
@@ -47,11 +58,12 @@
     "@types/react-helmet": "^6.1.11",
     "@types/wouter": "^2.2.0",
     "@types/ws": "^8.18.1",
-    "@vitejs/plugin-react": "^4.3.3",
+    "@vitejs/plugin-react": "^4.2.0",
+    "cross-env": "^7.0.3",
     "tailwindcss": "^4.1.7",
     "ts-node": "^10.9.2",
+    "tsx": "^4.19.4",
     "typescript": "5.8.3",
-    "vite": "^5.4.19",
-    "tsx": "^4.19.4"
+    "vite": "^5.4.19"
   }
 }
