@@ -20,6 +20,7 @@
     "drizzle-orm": "^0.43.1",
     "drizzle-zod": "^0.8.1",
     "express": "^4.21.2",
+    "express-async-handler": "^1.2.0",
     "express-session": "^1.18.1",
     "lucide-react": "^0.511.0",
     "memorystore": "^1.6.7",
@@ -36,6 +37,7 @@
     "zod-validation-error": "^3.4.1"
   },
   "devDependencies": {
+    "@replit/vite-plugin-runtime-error-modal": "^0.0.3",
     "@types/express": "^5.0.2",
     "@types/express-session": "^1.18.1",
     "@types/multer": "^1.4.12",
@@ -46,6 +48,7 @@
     "@types/wouter": "^2.0.1",
     "@types/ws": "^8.18.1",
     "@vitejs/plugin-react": "^4.3.2",
+    "cross-env": "^7.0.3",
     "tailwindcss": "^3.4.17",
     "ts-node": "^10.9.1",
     "tsx": "^4.7.0",

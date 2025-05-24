@@ -14,8 +14,14 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["vite/client"]
+    "types": ["vite/client"],
+    "baseUrl": ".", 
+    "paths": {
+      "@/*": ["client/*"],
+      "@shared/*": ["shared/*"]
+    }
   },
   "include": ["client", "server"],
   "exclude": ["node_modules"]
 }
+
