@@ -6,7 +6,8 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src')
-    }
-  }
+      '@assets': path.resolve(__dirname, 'src/assets'),
+      '@shared/schema': path.resolve(__dirname, '../shared/schema.ts'),
+    },
+  },
 });

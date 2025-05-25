@@ -1,8 +1,9 @@
 import { Router } from 'express';
+
 const router = Router();
 
-router.get('/', (req, res) => {
-  res.send('Example route working!');
+router.get('/example', (req, res) => {
+  res.json({ message: 'Hello from /example route!' });
 });
 
 export default router;
